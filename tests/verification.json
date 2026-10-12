@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-12",
+  "version": "0.3.0",
+  "artifact": {
+    "name": "fiji-pocket.apk",
+    "bytes": 4203823,
+    "sha256": "e51d53b46af1449bd01b491b707aa566f7769180567e35bb999188fc5681a5ad",
+    "min_sdk": 26,
+    "target_sdk": 36,
+    "debuggable": false,
+    "permissions": [],
+    "native_libraries": []
+  },
+  "changes": [
+    "Persistent light/dark theme across workspace, gallery, native dialogs, and histogram",
+    "Removed LOCAL IMAGE ANALYSIS header subtitle",
+    "Build requires all four full demo datasets, thumbnails, and credits and verifies packaged bytes"
+  ],
+  "build": "PASS javac, D8, aapt2, zip alignment, APK v2/v3 signature verification",
+  "offline_assets": "PASS all four TIFFs and four thumbnails match provenance hashes; all ten demo asset files inside the signed APK match source bytes",
+  "android_14": {
+    "sdk": 34,
+    "device": "Orca_Tablet_Android_14 / ARM64",
+    "release_ui": "PASS tests/ui_theme.py",
+    "theme_state": "PASS light and dark selection survive force-stop/relaunch",
+    "working_image": "PASS exact screenshot pixels inside image/ROI region before and after switching theme; panned viewport, ROI bounds, image dimensions/type and undo retained",
+    "dialogs": "PASS light gallery, Gaussian form, light/dark histograms visually inspected",
+    "bundled_demos": "PASS all four gallery entries visible in both themes; all four original datasets load; brain retains 57 slices",
+    "layout": "PASS portrait and landscape: selected theme retained and header controls visible; subtitle absent",
+    "installed_release_hash": "PASS installed APK identical to dist/fiji-pocket.apk"
+  },
+  "prior_release_evidence": "verification-0.2.0.json",
+  "scope": "Image processing and demo algorithms unchanged. Previous numerical/core suites are recorded in prior release evidence; this release received focused UI and packaging verification.",
+  "not_verified_this_release": [
+    "Android 16 theme runtime",
+    "physical devices",
+    "minimum Android 8 runtime"
+  ]
+}

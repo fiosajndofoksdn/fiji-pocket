@@ -1,0 +1,36 @@
+Biology demo images from ImageJ's official Open Samples collection
+https://imagej.net/ij/images/
+
+Fluorescent cells
+Source: https://imagej.net/ij/images/FluorescentCells.zip
+Description: https://imagej.net/ij/images/FluorescentCells.txt
+Molecular Probes demo slide of bovine pulmonary artery endothelial cells.
+Blue: DAPI-stained nuclei. Green: tubulin labeled with Bodipy FL goat
+anti-mouse IgG. Red: F-actin labeled with Texas Red X-Phalloidin.
+The original R/G/B planes are packed into one RGB TIFF without changing
+pixel values. No analysis image resizing. The embedded caption is retained
+in the original; the segmentation demo analyzes only rows y=0..469.
+
+Fruit-fly brain
+Source: https://imagej.net/ij/images/flybrain.zip
+Description: https://imagej.net/ij/images/flybrain.txt
+Courtesy Benjamin Schmid; prepared/scanned in the Heisenberg lab,
+Wuerzburg, Germany. Confocal Drosophila brain, green nc82 antibody staining,
+red GAL4 driver line 78y expression. Upstream documentation says this
+sample was smoothed and resampled four times per dimension before release.
+All 57 RGB slices and XY calibration from that supplied sample are retained.
+The mobile demo is a 2D maximum-intensity projection, not a 3D rendering.
+
+Embryos and leaf
+https://imagej.net/ij/images/embryos.jpg
+https://imagej.net/ij/images/leaf.jpg
+ImageJ Open Samples. The sample listing does not identify their creators.
+Decoded from the original JPEG files at full size and stored in losslessly
+compressed TIFF. Their embedded scale bar/ruler remains in the image;
+no physical calibration is inferred from these markings.
+
+All thumbnails are reduced previews of the supplied images. Analysis uses
+the full-resolution bundled TIFF data. Source files, original description
+files, preparation script, hashes and transformations accompany the source.
+These image credits are separate from the new Android wrapper's GPL notice;
+the port does not claim authorship or assign a new license to sample images.

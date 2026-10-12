@@ -1,0 +1,21 @@
+FluorescentCells.tif
+
+This image is made from a Molecular Probes demo slide:
+
+   Cells: bovine pulmonary arthery endothelial cells
+   Blue: nucleus stained with DAPI
+   Green: Tubulin stained with Bodipy FL goat anti-mouse IgG
+   Red: F-Actin stained with Texas Red X-Phalloidin
+   
+ImageJ opens it as a 3 channel, 8-bit composite image. Use
+the slider under the image to switch channels. The subtitle
+has information about the current channel. For example,
+"2/3 (Green)" indicates that the current channel is the 2nd of 3
+and its label is "Green". Open the "Channels" tool by pressing
+shift-z (Image>HyperStacks>Channels) and you will be able to
+enable/disable channels or view individual channels. Use the
+"B&C" tool (Image>Adjust>Brightness/Contrast) to adjust the
+brightness and contrast of the current channel. Change the color
+of the current channel by selecting a different LUT from the
+Image>Lookup Tables menu. Convert to RGB using the 
+Image>Color>Stack to RGB command.

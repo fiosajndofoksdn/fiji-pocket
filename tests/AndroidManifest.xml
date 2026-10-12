@@ -1,0 +1,5 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="org.fijipocket.tests">
+    <uses-sdk android:minSdkVersion="26" android:targetSdkVersion="36" />
+    <application android:label="Fiji Pocket tests" />
+    <instrumentation android:name="org.fijipocket.tests.DeviceChecks" android:targetPackage="org.fijipocket.android" android:functionalTest="true" />
+</manifest>

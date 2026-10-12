@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-12",
+  "version": "0.2.0",
+  "artifact": {
+    "name": "fiji-pocket.apk",
+    "bytes": 4199727,
+    "sha256": "1dde974106cd0aec6b5f446f8930aa1edf80f0402aa6d64d5154c58475ea1b10",
+    "min_sdk": 26,
+    "target_sdk": 36,
+    "debuggable": false,
+    "permissions": [],
+    "native_libraries": []
+  },
+  "host_tests": {
+    "result": "PASS",
+    "existing_core_assertions": 787656,
+    "imagej_reference": "PASS Gaussian exact, five thresholds exact, median/Sobel comparisons",
+    "independent_tiff_fixtures": "PASS",
+    "bundled_source_fidelity": "PASS every pixel against upstream originals, all 57 brain slices, all RGB channels",
+    "asset_reproducibility": "PASS byte-for-byte regeneration",
+    "demo_recipes": "PASS all four; originals unchanged, dimensions/calibration retained, TIFF roundtrips",
+    "independent_green_projection": "PASS every pixel with NumPy",
+    "independent_region_counts": {
+      "cells": 6,
+      "embryos": 22,
+      "caption_excluded": true
+    }
+  },
+  "android_14": {
+    "sdk": 34,
+    "device": "Orca_Tablet_Android_14 / ARM64",
+    "core_result": "PASS",
+    "core_assertions": 787656,
+    "core_duration_ms": 1659,
+    "demo_numeric_tests": "PASS all four",
+    "release_ui": "PASS all four gallery entries, credits/guides, recipes, reset/undo, stack slider, manual RGB extraction, demo identity after process restart",
+    "exports": "PASS actual SAF TIFF/CSV export; cell mask and brain projection pixels match independent outputs; XY scale retained; final cell CSV rows verified",
+    "exported_csv_areas": "PASS all six region pixel areas match independent flood fill"
+  },
+  "android_16": {
+    "sdk": 36,
+    "device": "Fiji_Tablet_Android_16 / ARM64",
+    "core_result": "PASS",
+    "core_assertions": 787656,
+    "core_duration_ms": 650,
+    "demo_numeric_tests": "PASS all four",
+    "release_ui": "PASS all four gallery entries, credits/guides, recipes, reset/undo, stack slider, manual RGB extraction, demo identity after process restart",
+    "exports": "PASS actual SAF TIFF/CSV export; cell mask and brain projection pixels match independent outputs; XY scale retained; final cell CSV rows verified",
+    "exported_csv_areas": "PASS all six region pixel areas match independent flood fill"
+  },
+  "test_environment_notes": [
+    "Initial simultaneous emulator UI run interrupted by Android System UI ANR and UI-automation failure. The Android 16 System UI also stalled during a cold boot; closing its ANR dialog restarted System UI. App numeric checks passed throughout. Release UI tests then run sequentially."
+  ],
+  "prior_release_evidence": "verification-0.1.0.json",
+  "not_verified": [
+    "physical Android devices",
+    "minimum Android 8 runtime",
+    "desktop Fiji plugins/macros/Bio-Formats (not included)"
+  ],
+  "layout_validation": "PASS final APK on Android 14: rotate an already-open gallery portrait \u2192 landscape; all four cards and Close visible, equal card widths, working close/reopen. Final changes only resize/recreation handling; demo algorithms unchanged from full Android 14/16 recipe suites."
+}

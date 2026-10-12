@@ -1,0 +1,52 @@
+Fiji Pocket 0.2 - independent Android core port
+
+This is not an official Fiji or ImageJ release. Fiji's desktop plugins,
+launchers, Java AWT/Swing interface, updater and macro runtime are not included.
+
+Fiji upstream: https://github.com/fiji/fiji
+Reviewed commit: ddc9a45d6042ed664d33ad95847096318c365aa4
+Fiji is a distribution of ImageJ with separately licensed components.
+
+ImageJ upstream: https://github.com/imagej/ImageJ
+Pinned commit: 4c4975d6df7cf89334e7bc7bb56c48f7b204f244
+ImageJ's LICENSE.txt states that ImageJ was developed at the NIH by a
+Federal Government employee during official duties and is in the public domain.
+The exact notice is supplied under vendor/imagej/LICENSE.txt.
+
+Directly reused/adapted sources:
+ - ij.process.AutoThresholder: ImageJ automatic threshold algorithms, derived
+   from the Auto_Threshold plugin by Gabriel Landini, with method citations
+   and contributor comments retained in the source.
+ - ij.io.TiffDecoder, TiffEncoder, ImageReader, ImageWriter, FileInfo,
+   RandomAccessStream, BitBuffer: ImageJ TIFF and pixel codecs.
+   LZW code credits Curtis Rueden; PackBits code credits Melissa Linkert.
+ - GaussianBlur convolution and kernel routines: Michael Schmid,
+   Stephan Saalfeld; extracted into GaussianKernel.
+
+Android adaptation:
+port_imagej.py reproduces the changes from the included pristine source files.
+Desktop progress and logging are replaced by a minimal platform-neutral bridge;
+virtual stacks, network URL loading, desktop JPEG decoding, preferences and
+private TIFF overlays/metadata are omitted. TIFF export is little endian.
+Truncated data and excessive decompression are rejected. Gaussian filtering
+uses the original kernel and convolution without the large-sigma downsampling
+optimization. All processing is local.
+
+New Android UI, adapters, data model, filters and analysis code:
+Copyright 2026 Fiji Pocket contributors.
+Licensed under GNU GPL version 3 or (at your option) any later version.
+See LICENSE for the full text. No warranty; see that license for details.
+
+The supplied source archive contains the complete corresponding source,
+unmodified upstream files, Android adaptation script, build script and tests.
+Java runtime, Android system, SDK/build tools and emulator are not bundled
+inside the APK. No proprietary desktop environment is included.
+
+Bundled biology demos:
+Real sample images are from https://imagej.net/ij/images/ (ImageJ Open Samples).
+Fluorescent Cells: Molecular Probes demo slide. Fly Brain: Benjamin Schmid,
+Heisenberg lab, Wuerzburg. Embryos and Leaf: creator not named in the sample
+listing. Original pixel values are retained in the prepared TIFF images;
+only thumbnails are resized. See assets/demos/CREDITS.txt and provenance.json
+for complete credits, original URLs and transformations. The app's Demo Guide
+also displays each image's credits. These samples are not synthetic images.

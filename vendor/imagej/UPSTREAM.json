@@ -1,0 +1,15 @@
+{
+  "repository": "https://github.com/imagej/ImageJ",
+  "commit": "4c4975d6df7cf89334e7bc7bb56c48f7b204f244",
+  "files": {
+    "ij/io/BitBuffer.java": "ad40c2f6b1c059a81d7d935c928c64b2b4ad0c045260f0082db3ba137dfb1408",
+    "ij/io/FileInfo.java": "8c9c70e440ddc9a1949cb7f88a8fac8ae3895fa8faf4995915dc50d50ec70726",
+    "ij/io/ImageReader.java": "f884a6f4ef0a97477174073eec3de0353c88a5c953341136e08fb5113c93b54a",
+    "ij/io/ImageWriter.java": "c3d95d6aac9c6e26c5fbfb3c5e9957e76e30e9513021e1691d8faeccd9b2d671",
+    "ij/io/RandomAccessStream.java": "7c788037b388cb71ae5126874addd20cd1b25e4c68b93b7ec3009e3d596d8c6f",
+    "ij/io/TiffDecoder.java": "2740feb42614f85a4b80446b132904526adcc49dc99ae6d3eda1165f61bf05e1",
+    "ij/io/TiffEncoder.java": "efc4852785a35b760e3792c75d8764e17bcfd513751f3b4fce4d48c7df393b98",
+    "ij/plugin/filter/GaussianBlur.java": "2e5827a3e4b3aca0d2e43b9151be5cf2f3d1f69fb5d3e167bdd10d94e101b782",
+    "ij/process/AutoThresholder.java": "a55323e8c84b0b6bd82e8df12aea2503805eabefe069e53860476ebb2d607dc5"
+  }
+}

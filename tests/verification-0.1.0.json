@@ -1,0 +1,59 @@
+{
+  "date": "2026-10-12",
+  "artifact": {
+    "name": "fiji-pocket.apk",
+    "bytes": 98917,
+    "sha256": "4574be9d4766852f34970f1404f7abe8b5f18ced122949862870e3aba752e3ca",
+    "min_sdk": 26,
+    "target_sdk": 36,
+    "debuggable": false,
+    "permissions": [],
+    "native_libraries": []
+  },
+  "host_tests": {
+    "core_assertions": 787656,
+    "result": "PASS",
+    "reference_imagej_commit": "4c4975d6df7cf89334e7bc7bb56c48f7b204f244",
+    "gaussian_max_absolute_error": 0.0,
+    "thresholds_exact": [
+      "Otsu",
+      "Default",
+      "Li",
+      "Triangle",
+      "Yen"
+    ],
+    "median_sobel_reference": "PASS interior pixels; Sobel tolerance 1",
+    "independent_tiff_fixtures": "PASS unsigned 16-bit raw/LZW/Deflate/PackBits, big endian, private metadata, WhiteIsZero, float32, RGB and multipage"
+  },
+  "android_14": {
+    "sdk": 34,
+    "device": "Orca_Tablet_Android_14 / emulator-5556 / ARM64",
+    "core_assertions": 787656,
+    "core_duration_ms": 1697,
+    "release_ui": "PASS sample, Gaussian, undo, Otsu, 18 known particles, ROI measurements, rotation, crop, histogram, portrait/landscape",
+    "files": "PASS actual SAF import/export of TIFF, PNG and CSV; independent exported pixel, calibration and result comparison",
+    "recovery": "PASS force-stop session/results restore and background process kill during save dialog (PID 5237 -> 5769)",
+    "measured_pss_kib": 39484
+  },
+  "android_16": {
+    "sdk": 36,
+    "device": "Fiji_Tablet_Android_16 / emulator-5558 / ARM64",
+    "core_assertions": 787656,
+    "core_duration_ms": 549,
+    "core_result": "PASS",
+    "release_ui": "PASS sample, Gaussian, undo, Otsu, 18 known particles, measurement, rotation, sample restoration",
+    "measured_pss_kib": 36262
+  },
+  "limits": [
+    "8,388,608 pixels per plane",
+    "32 MiB decoded stack",
+    "512 slices",
+    "128 MiB source file",
+    "10,000 detected particles per analysis"
+  ],
+  "not_verified": [
+    "physical Android devices",
+    "minimum Android 8 runtime",
+    "complete Fiji plugins, macros or Bio-Formats (not included)"
+  ]
+}

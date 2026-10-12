@@ -1,0 +1,7 @@
+Confocal scan of a Drosophila brain. Green shows an nc82 
+antibody staining,  red the expression pattern of the GAL4 
+driver line 78y. The original image was smoothed and 
+resampled 4 times in each direction. The brain was  prepared 
+and scanned in the Heisenberg lab in Wuerzburg, Germany. 
+Courtesy of Benjamin Schmid, author of the ImageJ 3D Viewer
+(http://www.neurofly.de/).

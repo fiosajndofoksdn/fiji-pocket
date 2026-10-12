@@ -1,0 +1,64 @@
+{
+  "source_base": "https://imagej.net/ij/images/",
+  "preparation": "No resizing of analysis images. Fluorescent channels packed into RGB without changing their 8-bit values; flybrain full 57-slice RGB stack retained; JPEG samples decoded once to TIFF. TIFF data losslessly Deflate-compressed. Thumbnails resized separately.",
+  "source_files": {
+    "FluorescentCells.txt": {
+      "bytes": 999,
+      "sha256": "6c636f47db7b7e05f13d705c55211bcc60bbe218badf0b4282a946945eb46eeb"
+    },
+    "FluorescentCells.zip": {
+      "bytes": 436133,
+      "sha256": "38507fab9787016fad6204239fb0e56437e7513f57d362cec644cd363faadda7"
+    },
+    "embryos.jpg": {
+      "bytes": 132040,
+      "sha256": "a79adab941ddda856d425096a8d2671b68b4227b855f0746d7d7e95db1f7105e"
+    },
+    "flybrain.txt": {
+      "bytes": 379,
+      "sha256": "0e3795738e19636a424f9e109c7be849480034f2eea50cc883a38b05fa7533a5"
+    },
+    "flybrain.zip": {
+      "bytes": 1024478,
+      "sha256": "e15279f35b485ee1e87365d20ba4e113bd9e76dd2a0fc4400cec567b485353a4"
+    },
+    "leaf.jpg": {
+      "bytes": 36642,
+      "sha256": "4e865d5471008fc92bb8daa9aeaa61d01dc789fd20191c463e0a12825e66f738"
+    }
+  },
+  "bundled_files": {
+    "brain-thumb.jpg": {
+      "bytes": 12374,
+      "sha256": "5c2ba898a382c3f0d3ce0fe52865c5cbaf04ea75ad96bfb2d6513d4f37800efe"
+    },
+    "brain.tif": {
+      "bytes": 1037637,
+      "sha256": "7d988648a5888389ec82f284bb9589bbb371374b310bbdd15b748a2789890e9b"
+    },
+    "cells-thumb.jpg": {
+      "bytes": 14532,
+      "sha256": "9fde6420749017b9a8a92636abc8fccbbf5330cf8e7023bb4fa0d4415592f0b9"
+    },
+    "cells.tif": {
+      "bytes": 489393,
+      "sha256": "56feed0c7e1e1d820b3528a3f629c24087e60e9a9345f4fa80b9ef52be47d469"
+    },
+    "embryos-thumb.jpg": {
+      "bytes": 7780,
+      "sha256": "8bd6cbf9691c3e3708d399de662e582524555cf8e6021e2bbbc410fa27c4ad26"
+    },
+    "embryos.tif": {
+      "bytes": 2229106,
+      "sha256": "87fc3b39158f4bf47f15035de8f22abcb7ec2fb948711429b824a917a5d48ce4"
+    },
+    "leaf-thumb.jpg": {
+      "bytes": 11161,
+      "sha256": "5a31b5e38b8a686964601a2e154290dfa2a82ffc9b787f5eca0bfafe44c58588"
+    },
+    "leaf.tif": {
+      "bytes": 287955,
+      "sha256": "75b075042e3433cddc55acb6abfe3903cd000e2692936d4b1eaf6b771fad5ef3"
+    }
+  }
+}

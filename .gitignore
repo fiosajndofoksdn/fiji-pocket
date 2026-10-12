@@ -1,0 +1,11 @@
+build/
+dist/
+tests/output/
+__pycache__/
+.DS_Store
+*.pyc
+.mobile/
+*.keystore
+*.jks
+.env
+.env.*
